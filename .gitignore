@@ -1,0 +1,17 @@
+# .gitignore
+
+# Python #
+__pycache__/
+*.pyc
+.env
+
+# Docker #
+docker-compose.override.yml
+
+# VSCode #
+.vscode/
+.devcontainer/
+
+# IDE/Editor files #
+.idea/
+*.swp

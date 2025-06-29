@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  bot:
+    # Dockerfileがある場所を指定してイメージをビルド
+    build: .
+    # .envファイルから環境変数を読み込む
+    env_file:
+      - .env
+    # ローカルのsrcフォルダをコンテナの/appフォルダに同期
+    # ローカルでコードを編集すると即座にコンテナ内に反映される
+    volumes:
+      - ./src:/app
